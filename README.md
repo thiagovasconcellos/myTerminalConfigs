@@ -56,3 +56,7 @@ zplugin light zsh-users/zsh-autosuggestions
 zplugin light zsh-users/zsh-completions
 zplugin light zdharma/fast-syntax-highlighting
 ```
+
+## E confira o resultado final
+Exibindo a versão do Node, NPM, branch do git, etc...
+![](gif.gif)
