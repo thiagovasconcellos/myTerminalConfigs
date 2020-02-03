@@ -20,7 +20,7 @@ ZSH_THEME="spaceship"
 
 ### Inserir informações adicionais no final do arquivo:
 
-SPACESHIP_PROMPT_ORDER=(
+```SPACESHIP_PROMPT_ORDER=(
   user
   dir
   host
@@ -35,10 +35,12 @@ SPACESHIP_PROMPT_ORDER=(
   jobs
   exit_code
   char
-)
-SPACESHIP_PROMPT_ADD_NEWLINE=false
-SPACESHIP_CHAR_SYMBOL="❯"
-SPACESHIP_CHAR_SUFFIX=" "
+)```
+
+
+``SPACESHIP_PROMPT_ADD_NEWLINE=false``
+``SPACESHIP_CHAR_SYMBOL="❯"``
+``SPACESHIP_CHAR_SUFFIX=" "``
 
 Instalar o zplugin para gerenciar a instalação de pacotes diretamente.
 `` $ mkdir ~/.zinit``
