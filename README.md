@@ -20,7 +20,8 @@ ZSH_THEME="spaceship"
 
 ### Inserir informações adicionais no final do arquivo:
 
-```SPACESHIP_PROMPT_ORDER=(
+```
+SPACESHIP_PROMPT_ORDER=(
   user
   dir
   host
@@ -35,7 +36,8 @@ ZSH_THEME="spaceship"
   jobs
   exit_code
   char
-)```
+)
+```
 
 
 ``SPACESHIP_PROMPT_ADD_NEWLINE=false``
