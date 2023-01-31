@@ -43,19 +43,20 @@ SPACESHIP_CHAR_SYMBOL="❯"
 SPACESHIP_CHAR_SUFFIX=" "
 ```
 
-Instalar o zplugin para gerenciar a instalação de pacotes diretamente.
-``` 
-$ mkdir ~/.zinit
-$ git clone https://github.com/zdharma/zinit.git ~/.zinit/bin
-```
+#Plugins
 
-Volte no .zshrc e adicione:
+# Step 1: clone repo for auto-suggestion
+## for oh-my-zsh
+git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
+## or, for zsh
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 
-```
-zplugin light zsh-users/zsh-autosuggestions
-zplugin light zsh-users/zsh-completions
-zplugin light zdharma/fast-syntax-highlighting
-```
+# Step 2: open config file 
+nano ~/.zshrc
+
+# Step 3: 
+## for oh-my-zsh, add "zsh-autosuggestions" in plugins section
+## or, for zsh, add "source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh"
 
 ## E confira o resultado final
 Exibindo a versão do Node, NPM, branch do git, etc...
