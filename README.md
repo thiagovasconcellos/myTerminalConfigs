@@ -45,18 +45,20 @@ SPACESHIP_CHAR_SUFFIX=" "
 
 #Plugins
 
-# Step 1: clone repo for auto-suggestion
+# Step 1: clone repo for auto-suggestion / auto-update / highlight
 ## for oh-my-zsh
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
-## or, for zsh
-git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+git clone https://github.com/TamCore/autoupdate-oh-my-zsh-plugins $ZSH_CUSTOM/plugins/autoupdate
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+
 
 # Step 2: open config file 
-nano ~/.zshrc
+code ~/.zshrc
 
 # Step 3: 
-## for oh-my-zsh, add "zsh-autosuggestions" in plugins section
-## or, for zsh, add "source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh"
+
+plugins=(git zsh-autosuggestions autoupdate zsh-syntax-highlighting)
 
 ## E confira o resultado final
 Exibindo a versão do Node, NPM, branch do git, etc...
